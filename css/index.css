@@ -1,0 +1,183 @@
+html,body{
+    overflow: hidden;
+    width: 100%;height:100%;
+    color:#333;
+}
+.box{
+    background: url(../img/bg2.jpg);
+}
+.container-fluid{
+    height:100%;
+}
+.container-fluid>.content{
+    height:100%;
+}
+.container-fluid>.content>div[class*=col]{
+    height:100%;
+}
+.left1{
+    background: #000;
+    opacity: 0.5;
+    /*background:url(../img/4.png);*/
+    position: relative;
+    left:0;top:0;
+}
+.left{
+    position: absolute;
+    left:0;top:0;
+    z-index: 2;
+}
+.img img{
+    display: block;
+    margin:0 auto;
+}
+.search{
+    margin-top:20px;
+}
+.form-control{
+    background: none;
+    color: #fff;
+}
+.searchText{
+    top:0;
+    color:#FFF;
+}
+.to_do_list{
+    margin-top:15px;
+}
+.to_do_list:before,.to_do_list:after{
+    content: "";
+    display: block;
+}
+.to_do_list:after{
+    clear: both;
+}
+input{
+    border: none;
+    
+    background:none;
+    float: left;
+}
+
+.searchText,addText{
+  
+    background:none;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #000;
+}
+.list{
+    overflow: hidden;
+}
+.ok{
+    cursor: pointer;
+}
+.delBtn{
+    float: right;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.delBtn:hover{
+    color:red;
+}
+.list:hover .delBtn{
+    opacity: 1;
+}
+.addlist{
+    position: absolute;
+    bottom:20px;
+    cursor: pointer;
+    width: 290px;
+
+}
+.success{
+    position:absolute;
+    left:20px;top:20px;
+    color:#000;
+    font-size: 16px;
+}
+.rightaddlist{
+    position: absolute;
+    left:0px;top:20px;
+    cursor: pointer;
+
+}
+.righttodolist1{
+    opacity: 0.3;
+    background: #000;
+    height:100%;
+    margin-top:20px;
+    position:relative;
+
+}
+.list_info{
+    color:#000;
+    font-size: 16px;
+    padding:0 0 18px 3px;
+}
+.righttodolist{
+    margin-top:20px;
+    height:100%;
+    position:absolute;
+    top:0;
+    z-index: 2;
+}
+.rightaddlist span{
+    color:#000;
+}
+.right .title{
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 50px;
+    border-bottom: 2px solid #888;
+    text-align: center;
+    color:#222;
+}
+
+.successnum{
+    position:absolute;
+    top:2px;left:70px;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    background: red;
+    font-size: 14px;
+    text-align: center;
+    line-height: 14px;
+}
+.title h3{
+    float: left;
+}
+.liebiao{
+    color:#f0f0f0;
+    font-size:16px;
+}
+.addcon{
+    float: right;
+    font-size: 25px;
+    line-height: 80px;
+}
+.conlist{
+    border-bottom: 1px solid #888;
+    overflow: hidden;
+    padding: 5px 0;
+}
+.done{
+    float: left;margin-right: 5px;
+}
+.conlist input{
+    float: left;width: 60%;
+    background: none;
+    border: none;
+    color:#000;
+}
+.conlist .delBtnCon{
+    float: right;visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+.conlist:hover .delBtnCon{
+    visibility: visible;
+    opacity: 1;
+}
